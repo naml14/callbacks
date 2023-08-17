@@ -90,13 +90,7 @@ $boton4.addEventListener('click', () => {
 });
 //Ejercicio 5
 function ejercicio5(time){
-    let hours=[];
-    time.forEach(element => {
-        if (element>120) {
-            hours.push(element);
-        }
-    });
-    return hours
+    return time.filter(element => element > 120);
 }
 $boton5.addEventListener('click', () =>{
     let time=[120, 80, 200, 100, 150,220];
